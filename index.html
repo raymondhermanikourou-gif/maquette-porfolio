@@ -4,34 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>porfolio.fr</title>
   </head>
-  <body>
+  <body class="bg-white font-[sora]">
+    <header class="flex justify-between items-center py-10 px-10">
+      <!-- logo et titre -->
+      <div class="flex items-center gap-3">
+        <img src="asset/logo 1.png" alt="logo personnel" class="w-10 h-10" />
+        <p class="font-bold text-xl">Personnel</p>
+      </div>
+      <!--bar de  navigation  -->
+      <nav class="hidden md:flex gap-6 font-extrabold">
+        <a href="#">About Me</a>
+        <a href="#">Skills</a>
+        <a href="#">Project</a>
+        <a href="#">Contact Me</a>
+      </nav>
+      <!-- boutton resume -->
+      <button
+        class="hidden md:flex rounded-md items-center justify-center h-10 bg-black text-white gap-2 px-4 font-semibold text-xl"
+      >
+        Resume
+        <span class="flex items-center">
+          <img src="asset/Icon.png" alt="icone fleche" class="w-4 h-4" />
+        </span>
+      </button>
+      <!-- icon pour le telephone -->
+      <button class="md:hidden">
+        <img
+          src="asset/material-symbols_menu.png"
+          alt="Menu telephone"
+          class="w-8 h-8"
+        />
+      </button>
+    </header>
+    <main>
+      <!-- section presentation -->
+<section class="flex flex-col-reverse md:flex-row items-center justify-center gap-6 px-10 m-10 py-16 ">
 
-<header class=" flex justify-between items-center py-4 px-10 ">
-  <!-- logo et titre -->
-  <div class="flex items-center gap-3">
-  <img src="asset/logo 1.png" alt="logo personnel" class="w-10 h-10">
-  <p class="font-semibold">Personnel</p>
-</div>
-<!--bar de  naigation  -->
-<nav class="hidden md:flex gap-6 font-semibold">
-  <a href="#">About Me</a>
-  <a href="#">Skills</a>
-  <a href="#">Project</a>
-  <a href="#">Contact Me</a>
-</nav>
-<!-- boutton resume -->
-<button class="hidden md:flex rounded-md items-center justify-center  h-10  bg-black text-white  gap-2 px-4 font-semibold"> Resume
-  <span class="flex items-center">
-    <img src="asset/Icon.png" alt="icone fleche" class="w-4 h-4" />
-  </span>
-</button>
-<!-- icon pour le telephone -->
-<button class=" md:hidden">
-  <img src="asset/material-symbols_menu.png" alt="Menu telephone" class="w-8 h-8" />
-</button>
+  <!-- Bloc texte gauche -->
+  <div class="md:w-1/2 flex flex-col gap-3 text-center md:text-left">
 
-</header>
+    <h1 class="text-2xl font-normal">Hello I'am <span class="font-extrabold text-3xl">Evren Shah.</span></h1>
+    <h2 class="text-3xl font-extrabold">Frontend <span class="text-4xl">Developer</span></h2>
+    <h3 class="text-2xl font-normal">Based In <span class="font-extrabold text-3xl">India.</span></h3>
+    <p class="text-gray-500"> I'm Evren Shah Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer
+              took a galley of type and scrambled it to specimen book.</p>
+
+    <!-- Icônes réseaux sociaux -->
+    <div class="flex justify-center md:justify-start gap-3 mt-16">
+      <img src="asset/facebk.png" alt="icone-facebook" class="px-3 py-2" />
+      <img src="asset/Button1.png" alt="icon" class="px-3 py-2" />
+      <img src="asset/Button2.png" alt="icon-twitter" class="px-3 py-2" />
+      <img src="asset/Button3.png" alt="icon" class="px-3 py-2" />
+    </div>
+
+  </div>
+
+  <!-- Image-->
+  <div class="md:w-1/2 flex justify-center">
+    <img src="asset/Banner.png" alt="homme" class="w-75 md:w-150" />
+  </div>
+  
+
+</section>
+              
+    </main>
   </body>
 </html>
